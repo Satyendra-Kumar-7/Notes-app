@@ -9,7 +9,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "/index.js"
     }
-  ]
+  ],
+  "env": {
+    "ACCESS_TOKEN_SECRET": "@access_token_secret",
+    "MONGODB_URI": "@mongodb_uri"
+  }
 }
